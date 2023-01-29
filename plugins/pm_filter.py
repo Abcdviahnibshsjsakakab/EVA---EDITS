@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔖 {get_size(file.file_size)} ➪ {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📂 {get_size(file.file_size)} ➪ {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📈 sᴛᴀᴛᴜs', callback_data='stats'),
             InlineKeyboardButton('👑 ᴏᴡɴᴇʀ', callback_data='owner')
             ],[
-            InlineKeyboardButton('🦋 ɢʀᴏᴜᴩ', url='https://t.me/+htb662rmg2ZmZjJl'),
+            InlineKeyboardButton('🦋 ɢʀᴏᴜᴩ', url='https://t.me/+eJvqrixrfMBlYjI1'),
             InlineKeyboardButton('🔰 ᴀʙᴏᴜᴛ', callback_data='about')           
             ],[
             InlineKeyboardButton('ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs', callback_data='start')
@@ -680,7 +680,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🔖 {get_size(file.file_size)} ➪ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂 {get_size(file.file_size)} ➪ {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
